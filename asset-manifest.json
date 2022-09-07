@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mockup-simulatorcard/static/css/main.2ee529b4.css",
+    "main.js": "/mockup-simulatorcard/static/js/main.420a340c.js",
+    "static/js/787.26a32b36.chunk.js": "/mockup-simulatorcard/static/js/787.26a32b36.chunk.js",
+    "index.html": "/mockup-simulatorcard/index.html",
+    "main.2ee529b4.css.map": "/mockup-simulatorcard/static/css/main.2ee529b4.css.map",
+    "main.420a340c.js.map": "/mockup-simulatorcard/static/js/main.420a340c.js.map",
+    "787.26a32b36.chunk.js.map": "/mockup-simulatorcard/static/js/787.26a32b36.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ee529b4.css",
+    "static/js/main.420a340c.js"
+  ]
+}
