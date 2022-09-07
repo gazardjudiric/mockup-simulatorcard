@@ -1,38 +1,328 @@
+* {
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, div, hr {
+  margin: 0;
+  padding: 0;
+}
 .App {
-  text-align: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ /* background-color: rebeccapurple; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  border-style: none;
+  /* background-color: #e9e9ed; */
+  border-radius: 4px;
+  width: 90%;
+  padding: 5px;
+  border: 1px solid black;
+  margin-top: 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.body {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 0 0;
+  width: 65%;
+  height: auto;
+  background-color: aliceblue;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tools {
+  width: 80%;
+  height: auto;
+  background-color: white;
+  box-shadow: rgba(100, 100, 0, 0.2) 0px 7px 29px 0px;
+  padding-bottom: 10px;
+}
+.display {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 100%;
+  /* background-color: rgb(216, 230, 230); */
+  height: auto;
+}
+
+                                                          /* CardDirection */
+.cardDirection {
+  margin: 0px 20px 10px 10px;
+  padding-top: 15px;
+  /* background-color: aqua; */
+}
+.cardDirectionContent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  padding-left: 10px;
+  /* background-color: blue; */
+}
+.cardDirectionContentBoite {
+  width: 60px;
+  height: 35px;
+  content: " ";
+  background-color: rgb(235, 119, 167);
+  cursor: pointer;
+}                                                    
+.cardDirectionContentBoite1 {
+  width: 35px;
+  height: 50px;
+  content: " ";
+  background-color: rgb(233, 148, 36);
+  cursor: pointer;
+}
+.cardDirectionContent span {
+font-size: 24px;
+}
+.Img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  max-height: 650%;
+  /* background-color: yellow; */
+}
+.Img img{
+  height: auto;
+}
+
+                                                    /* Affiche Verticale */
+.verticale {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+  padding-bottom: 40px;
+  /* background-color: rebeccapurple; */
+  box-sizing: border-box;
+} 
+.displayInterface1Verticale {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(25, 32, 68); */
+  width: 45%;
+  height: 25rem;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 0, 0.2) 0px 7px 29px 0px;
+  /* color: white; */
+}
+.displayInterface1VerticaleContenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(25, 32, 68); */
+  width: 80%;
   color: white;
+  gap: 25px;
+  /* background-color: red; */
+}
+.displayInterface1Verticale h2 {
+  width: 100%;
+  font-size: 19px;
+  text-align: center;
+}
+.displayInterface2Verticale {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  width: 45%;
+  height: 25rem;
+  padding: 20px 20px 20px 20px;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 0, 0.2) 0px 7px 29px 0px;
+}
+.displayInterface2InformationVertical {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 80%;
+  height: 60%;
+  position: relative;
+  /* background-color: aqua; */
+}
+.displayInterface2InformationVertical h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+.displayInterface2InformationVertical::before {
+  position: absolute;
+ content: "";
+ width: 150px;
+ height: 3px;
+ background-color: grey;
+ transform: translateY(25px);
+}
+.displayInterface2InformationVertical span {
+  font-size: 12px;
+  flex-wrap: nowrap;
+  transform: translateY(-8px);
+}
+.displayInterface2InformationIconsVertical {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* background-color: yellow; */
+}
+.iconSocialVertical {
+  display: flex;
+  align-items: center;
+}
+.iconsFontVertical {
+  border: solid 1px black;
+  border-radius: 70%;
+  padding: 5px;
+}
+.iconSocialSpanVertical {
+  margin: 10px 0 0 5px;
+}
+.displayInterface2LogoVertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 20px 0;
+  gap: 5px;
+  /* background-color: green; */
+}
+.displayInterface2LogoVertical h3 {
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+}
+                                                                  /* Affiche horizontal */
+  .AffichageHorizontal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    /* background-color: yellow; */
+    gap: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+  }
+  .displayInterface1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(25, 32, 68); */
+  width: 80%;
+  height: 100%;
+  /* margin: 10px 0 0 40px; */
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 0, 0.2) 0px 7px 29px 0px;
+  /* color: white; */
+}
+.displayInterface1Contenu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 20px 0;
+
+}
+.displayInterface2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: white; */
+  width: 80%;
+  height: 80%;
+  /* margin: 25px 0 0 40px; */
+  padding: 20px 20px 20px 20px;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 0, 0.2) 0px 7px 29px 0px;
+}
+.displayInterface2Information {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 60%;
+  position: relative;
+  /* background-color: aqua; */
+}
+.displayInterface2Information h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+.displayInterface2Information::before {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 3px;
+  background-color: grey;
+  transform: translateY(25px);
+}
+.displayInterface2Information span {
+  font-size: 12px;
+  flex-wrap: nowrap;
+  transform: translateY(-8px);
+}
+.displayInterface2InformationIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  /* background-color: red; */
+}
+.iconSocial {
+  display: flex;
+  align-items: center;
+}
+.iconsFont {
+  border: solid 1px black;
+  border-radius: 70%;
+  padding: 5px;
+}
+.iconSocialSpan {
+  margin: 10px 0 0 5px;
+}
+.displayInterface2Logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 20px 0;
+  /* background-color: green; */
+}
+.displayInterface2Logo h3 {
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
 }
 
-.App-link {
-  color: #61dafb;
+                                                           /* Recto */
+.Recto {
+  margin: 0 10px 10px 10px;
+  /* background-color: red; */
+}
+.recto div {
+  margin-top: 10px;
+  /* background-color: blueviolet; */
+}
+.range input {
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+                                                           /* Verso */
+.Verso {
+  margin: 0 10px;
+}
+.verso div {
+  margin: 8px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
