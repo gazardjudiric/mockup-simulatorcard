@@ -24,7 +24,7 @@ input {
   display: flex;
   justify-content: center;
   margin: 40px 0 0 0;
-  width: 65%;
+  min-width: 90%;
   height: auto;
   background-color: aliceblue;
 }
@@ -51,29 +51,28 @@ input {
   padding-top: 15px;
   /* background-color: aqua; */
 }
-.cardDirectionContent {
+.cardDirectionHome   {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-top: 10px;
   padding-left: 10px;
-  /* background-color: blue; */
 }
-.cardDirectionContentBoite {
+.cardDirectionHomeContent1Boite {
   width: 60px;
   height: 35px;
   content: " ";
   background-color: rgb(235, 119, 167);
   cursor: pointer;
 }                                                    
-.cardDirectionContentBoite1 {
+.cardDirectionHomeContent2Boite {
   width: 35px;
   height: 50px;
   content: " ";
   background-color: rgb(233, 148, 36);
   cursor: pointer;
 }
-.cardDirectionContent span {
+.cardDirectionHome span {
 font-size: 24px;
 }
 .Img {
@@ -312,6 +311,9 @@ font-size: 24px;
 .recto div {
   margin-top: 10px;
   /* background-color: blueviolet; */
+}
+.rectoTitle {
+
 }
 .range input {
   padding: 0;

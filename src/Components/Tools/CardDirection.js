@@ -14,12 +14,16 @@ function CardDirection({managerDisplay}) {
         <div className='cardDirection'>
             <h2>Orientation de la carte</h2>
 
-            <div className='cardDirectionContent'>
-                <div className='cardDirectionContentBoite' onClick={affichageHorizontale}> </div>
-                <span>Horizontal</span>
-
-                <div className='cardDirectionContentBoite1' onClick={affichageVertical}> </div>
-                <span>Vertical</span>
+            <div className='cardDirectionHome'>
+                <div className='cardDirectionHomeContent1'>
+                    <div className='cardDirectionHomeContent1Boite' onClick={affichageHorizontale}> </div>
+                    <span>Horizontal</span>
+                </div>
+               
+               <div className='cardDirectionHomeContent2'>
+                    <div className='cardDirectionHomeContent2Boite' onClick={affichageVertical}> </div>
+                    <span>Vertical</span>
+               </div>
             </div>
         </div>
     );

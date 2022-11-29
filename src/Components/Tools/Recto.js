@@ -52,7 +52,7 @@ function Recto({managerTableImg, managerColor, colorText, managerZoom, imgWidth,
     return (
         <div className='Recto'>
             <div className='recto'>
-                <h3>Personaliser votre carte (Recto et Verso)</h3>
+                <h4 className='rectoTitle'>Personaliser votre carte (Recto et Verso)</h4>
                 <div>
                     <span>Ajouter un Logo</span>
                     <input type="file" onChange={uploadLogo}/>

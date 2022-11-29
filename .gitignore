@@ -28,4 +28,4 @@ yarn-error.log*
     "gh-pages": "^4.0.0"
 }
 "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+"deploy": "gh-pages -d build"
